@@ -49,7 +49,7 @@ export function Products() {
           {cookies.map((cookie) => (
             <div
               key={cookie.id}
-              className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden transform hover:scale-105"
+              className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden transform hover:scale-105 flex flex-col"
             >
               {/* Image/Icon */}
               <div className="bg-gradient-to-br from-gold to-yellow-400 h-48 flex items-center justify-center relative overflow-hidden">
@@ -57,10 +57,10 @@ export function Products() {
               </div>
 
               {/* Content */}
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-grow">
                 <h2 className="text-xl font-bold text-midnight mb-2">{cookie.name}</h2>
                 <p className="text-sm text-gray-500 mb-3 font-semibold">{cookie.flavor}</p>
-                <p className="text-gray-600 text-sm mb-4 line-clamp-3">{cookie.description}</p>
+                <p className="text-gray-600 text-sm mb-4 flex-grow">{cookie.description}</p>
 
                 {/* Price */}
                 <div className="mb-4 pb-4 border-b border-gray-200">
