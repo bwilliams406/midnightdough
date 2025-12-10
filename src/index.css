@@ -78,6 +78,7 @@ html {
   }
 }
 
+
 .animate-fade-in {
   animation: fade-in 1s ease-out forwards;
 }
