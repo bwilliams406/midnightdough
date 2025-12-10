@@ -3,11 +3,11 @@ import { Cookie } from '../types'
 export const cookies: Cookie[] = [
   {
     id: 1,
-    name: 'Moonlight Morsles',
+    name: 'Moonlight Morsels',
     description: 'Rich chocolate chip with cocoa undertones and crunchy edges for cosmic adventures',
     price: 3.75,
     flavor: 'Chocolate Chip',
-    image: '🍫',
+    imageUrl: '/img/midnightmorsels.jpg',
     nutritionalFacts: {
       calories: 360,
       fat: 20,
@@ -17,16 +17,16 @@ export const cookies: Cookie[] = [
       protein: 4,
       fiber: 3,
       sodium: 220,
-      allergens: 'Contains: Milk, Eggs, Wheat, Soy (from chocolate chips)',
+      allergens: 'Contains: Milk, Eggs, Wheat, Soy',
     },
   },
   {
     id: 2,
-    name: 'Midnight Obsidian(Specialty)',
+    name: 'Midnight Obsidian',
     description: 'Intensely decadent dark chocolate with premium dark chocolate chips and cocoa richness',
     price: 5.00,
-    flavor: 'Dark Chocolate Chip',
-    image: '⬛',
+    flavor: 'Dark Chocolate Chip · Specialty',
+    imageUrl: '/img/midnightobsidian.jpg',
     nutritionalFacts: {
       calories: 540,
       fat: 28,
@@ -36,7 +36,7 @@ export const cookies: Cookie[] = [
       protein: 6,
       fiber: 6.5,
       sodium: 260,
-      allergens: 'Contains: Milk, Eggs, Wheat, Soy (from chocolate chips)',
+      allergens: 'Contains: Milk, Eggs, Wheat, Soy',
     },
   },
   {
@@ -45,7 +45,7 @@ export const cookies: Cookie[] = [
     description: 'Wholesome oatmeal with plump raisins and warm spices for a nourishing treat',
     price: 3.75,
     flavor: 'Oatmeal Raisin',
-    image: '🌾',
+    imageUrl: '/img/solarharvest.jpg',
     nutritionalFacts: {
       calories: 380,
       fat: 16,
@@ -64,7 +64,7 @@ export const cookies: Cookie[] = [
     description: 'Pure vanilla sugar cookie with delicate, buttery crumb that sparkles like stardust',
     price: 3.75,
     flavor: 'Sugar Cookie',
-    image: '✨',
+    imageUrl: '/img/stardustsweetness.png',
     nutritionalFacts: {
       calories: 315,
       fat: 15.5,
@@ -83,7 +83,7 @@ export const cookies: Cookie[] = [
     description: 'Snickerdoodle with warm cinnamon sugar coating in a meteor shower of spiced flavor',
     price: 3.75,
     flavor: 'Snickerdoodle',
-    image: '☄️',
+    imageUrl: '/img/cinnamoncomet.jpg',
     nutritionalFacts: {
       calories: 320,
       fat: 16.5,
@@ -102,7 +102,7 @@ export const cookies: Cookie[] = [
     description: 'Bright lemon cookie with zesty citrus notes, shining like a distant star',
     price: 4.00,
     flavor: 'Lemon',
-    image: '⭐',
+    imageUrl: '/img/stellarcitrus.jpg',
     nutritionalFacts: {
       calories: 340,
       fat: 18,
@@ -116,4 +116,3 @@ export const cookies: Cookie[] = [
     },
   },
 ]
-

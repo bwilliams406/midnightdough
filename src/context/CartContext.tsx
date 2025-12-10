@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react'
 import { Cookie, CartItem } from '../types'
+import { getDiscountForQuantity } from '../utils/pricing'
 
 interface CartContextType {
   items: CartItem[]
@@ -8,7 +9,10 @@ interface CartContextType {
   updateQuantity: (cookieId: number, quantity: number) => void
   clearCart: () => void
   getTotal: () => number
-  getItemPrice: (cookieId: number, quantity: number, basePrice: number) => number
+  getTotalCookies: () => number
+  getCartDiscount: () => { discount: number; label: string }
+  getSubtotalBeforeDiscount: () => number
+  getTotalSavings: () => number
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined)
@@ -50,34 +54,49 @@ export function CartProvider({ children }: { children: ReactNode }) {
     setItems([])
   }
 
-  const calculatePrice = (cookieId: number, quantity: number, basePrice: number) => {
-    // Discount rules:
-    // - Cookies priced at $3.75 (ids: 1, 3, 4, 5): discount to $3.50 if 12+ in cart
-    // - Midnight Obsidian (id: 2, $5.25): discount to $4.85 if 12+ in cart
-    // - Stellar Citrus (id: 6, $4.25): discount to $3.75 if 12+ in cart
-
-    if (cookieId === 2) {
-      // Midnight Obsidian
-      return quantity >= 12 ? 4.85 : basePrice
-    } else if (cookieId === 6) {
-      // Stellar Citrus
-      return quantity >= 12 ? 3.75 : basePrice
-    } else if ([1, 3, 4, 5].includes(cookieId)) {
-      // Standard $3.75 cookies
-      return quantity >= 12 ? 3.50 : basePrice
-    }
-    return basePrice
+  // Get total number of cookies in cart (for mix & match discounts)
+  const getTotalCookies = () => {
+    return items.reduce((sum, item) => sum + item.quantity, 0)
   }
 
+  // Get the discount tier based on TOTAL cookies in cart
+  const getCartDiscount = () => {
+    const totalCookies = getTotalCookies()
+    return getDiscountForQuantity(totalCookies)
+  }
+
+  // Get subtotal before any discounts
+  const getSubtotalBeforeDiscount = () => {
+    return items.reduce((sum, item) => sum + (item.cookie.price * item.quantity), 0)
+  }
+
+  // Get total after applying cart-wide discount
   const getTotal = () => {
-    return items.reduce((sum, item) => {
-      const discountedPrice = calculatePrice(item.cookie.id, item.quantity, item.cookie.price)
-      return sum + discountedPrice * item.quantity
-    }, 0)
+    const subtotal = getSubtotalBeforeDiscount()
+    const { discount } = getCartDiscount()
+    return subtotal * (1 - discount)
+  }
+
+  // Get total savings from cart-wide discount
+  const getTotalSavings = () => {
+    const subtotal = getSubtotalBeforeDiscount()
+    const total = getTotal()
+    return subtotal - total
   }
 
   return (
-    <CartContext.Provider value={{ items, addToCart, removeFromCart, updateQuantity, clearCart, getTotal, getItemPrice: calculatePrice }}>
+    <CartContext.Provider value={{ 
+      items, 
+      addToCart, 
+      removeFromCart, 
+      updateQuantity, 
+      clearCart, 
+      getTotal,
+      getTotalCookies,
+      getCartDiscount,
+      getSubtotalBeforeDiscount,
+      getTotalSavings 
+    }}>
       {children}
     </CartContext.Provider>
   )
@@ -90,4 +109,3 @@ export function useCart() {
   }
   return context
 }
-

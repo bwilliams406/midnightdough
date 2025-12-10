@@ -3,7 +3,7 @@ export interface Cookie {
   name: string
   description: string
   price: number
-  image: string
+  imageUrl: string
   flavor: string
   nutritionalFacts: {
     calories: number
