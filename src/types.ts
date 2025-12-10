@@ -3,8 +3,19 @@ export interface Cookie {
   name: string
   description: string
   price: number
-  image: string
+  imageUrl: string
   flavor: string
+  nutritionalFacts: {
+    calories: number
+    fat: number
+    saturatedFat: number
+    carbohydrates: number
+    sugars: number
+    protein: number
+    fiber: number
+    sodium: number
+    allergens: string
+  }
 }
 
 export interface CartItem {

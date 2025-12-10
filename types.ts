@@ -1,0 +1,18 @@
+export interface Cookie {
+  id: number
+  name: string
+  description: string
+  price: number
+  image: string
+  flavor: string
+  nutritionalFacts: {
+    calories: number
+    fat: number
+    saturatedFat: number
+    carbohydrates: number
+    sugars: number
+    protein: number
+    fiber: number
+    sodium: number
+  }
+}
