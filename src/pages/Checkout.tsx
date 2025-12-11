@@ -5,7 +5,6 @@ import { ArrowLeft, Trash2, ChevronRight, MapPin, Truck } from 'lucide-react'
 import { NavigationBar } from '../components/NavigationBar'
 
 // Base ZIP code for Midnight Dough (75094 - Murphy, TX)
-const BASE_ZIP = '75094'
 
 // Approximate distance lookup for DFW area ZIP codes (in miles from 75094)
 // This is a simplified version - in production you'd use a real distance API

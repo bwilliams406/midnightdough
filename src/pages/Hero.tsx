@@ -109,7 +109,7 @@ function CosmicCanvas() {
 
       // Shooting stars
       createShootingStar()
-      shootingStars.forEach((star, index) => {
+      shootingStars.forEach((star) => {
         if (!star.active) return
 
         star.x += star.speed
