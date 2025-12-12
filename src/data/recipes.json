@@ -1,0 +1,150 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Sugar Cookie",
+      "displayName": "Stardust Sweetness",
+      "baseYield": 24,
+      "baseCookieSize": 48,
+      "totalDough": 1152,
+      "ovenTemp": "350°F (175°C)",
+      "bakeTime": "9-11 min",
+      "instructions": "Cream butter & sugar 2-3 min. Add egg, vanilla, sour cream. Mix dry ingredients. Combine. Chill 30-45 min. Scoop, roll in sugar. Bake until edges set.",
+      "ingredients": [
+        { "ingredientId": 1, "amount": 170, "category": "Wet" },
+        { "ingredientId": 3, "amount": 250, "category": "Wet" },
+        { "ingredientId": 14, "amount": 1, "category": "Wet" },
+        { "ingredientId": 18, "amount": 8, "category": "Wet" },
+        { "ingredientId": 16, "amount": 30, "category": "Wet" },
+        { "ingredientId": 7, "amount": 345, "category": "Dry" },
+        { "ingredientId": 8, "amount": 8, "category": "Dry" },
+        { "ingredientId": 11, "amount": 5, "category": "Dry" },
+        { "ingredientId": 12, "amount": 3, "category": "Dry" },
+        { "ingredientId": 25, "amount": 4, "category": "Dry" },
+        { "ingredientId": 3, "amount": 50, "category": "Rolling" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Snickerdoodle",
+      "displayName": "Cinnamon Comet",
+      "baseYield": 24,
+      "baseCookieSize": 50,
+      "totalDough": 1200,
+      "ovenTemp": "375°F (190°C)",
+      "bakeTime": "10 min",
+      "instructions": "Whisk dry ingredients. Cream butter & sugar 2 min. Add eggs and vanilla. Combine wet and dry. Roll in cinnamon sugar. Bake.",
+      "ingredients": [
+        { "ingredientId": 7, "amount": 375, "category": "Dry" },
+        { "ingredientId": 13, "amount": 6, "category": "Dry" },
+        { "ingredientId": 12, "amount": 5, "category": "Dry" },
+        { "ingredientId": 23, "amount": 4, "category": "Dry" },
+        { "ingredientId": 25, "amount": 3, "category": "Dry" },
+        { "ingredientId": 1, "amount": 226, "category": "Wet" },
+        { "ingredientId": 3, "amount": 267, "category": "Wet" },
+        { "ingredientId": 14, "amount": 1, "category": "Wet" },
+        { "ingredientId": 15, "amount": 1, "category": "Wet" },
+        { "ingredientId": 18, "amount": 8, "category": "Wet" },
+        { "ingredientId": 3, "amount": 70, "category": "Topping" },
+        { "ingredientId": 23, "amount": 3, "category": "Topping" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Dark Chocolate Chip",
+      "displayName": "Midnight Obsidian",
+      "baseYield": 10,
+      "baseCookieSize": 115,
+      "totalDough": 1150,
+      "ovenTemp": "375°F (190°C)",
+      "bakeTime": "12-14 min",
+      "instructions": "Cream cold butter with sugars 3-4 min. Add eggs one at a time, then vanilla. Mix dry ingredients. Combine. Fold in chocolate. Chill 30+ min. Bake, top with sea salt.",
+      "ingredients": [
+        { "ingredientId": 1, "amount": 226, "category": "Wet" },
+        { "ingredientId": 5, "amount": 220, "category": "Wet" },
+        { "ingredientId": 3, "amount": 100, "category": "Wet" },
+        { "ingredientId": 14, "amount": 2, "category": "Wet" },
+        { "ingredientId": 18, "amount": 8, "category": "Wet" },
+        { "ingredientId": 7, "amount": 280, "category": "Dry" },
+        { "ingredientId": 9, "amount": 60, "category": "Dry" },
+        { "ingredientId": 12, "amount": 5, "category": "Dry" },
+        { "ingredientId": 25, "amount": 4, "category": "Dry" },
+        { "ingredientId": 22, "amount": 2, "category": "Dry" },
+        { "ingredientId": 28, "amount": 255, "category": "Mix-in" },
+        { "ingredientId": 26, "amount": 2, "category": "Topping" }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Chocolate Chip",
+      "displayName": "Moonlight Morsels",
+      "baseYield": 48,
+      "baseCookieSize": 55,
+      "totalDough": 2640,
+      "ovenTemp": "350°F (175°C)",
+      "bakeTime": "10-12 min",
+      "instructions": "Combine sugars. Add butter, vanilla, eggs. Mix flour, baking soda, salt. Combine wet and dry. Fold in chips. Bake.",
+      "ingredients": [
+        { "ingredientId": 3, "amount": 300, "category": "Wet" },
+        { "ingredientId": 4, "amount": 400, "category": "Wet" },
+        { "ingredientId": 1, "amount": 454, "category": "Wet" },
+        { "ingredientId": 18, "amount": 26, "category": "Wet" },
+        { "ingredientId": 14, "amount": 4, "category": "Wet" },
+        { "ingredientId": 7, "amount": 750, "category": "Dry" },
+        { "ingredientId": 12, "amount": 9, "category": "Dry" },
+        { "ingredientId": 25, "amount": 9, "category": "Dry" },
+        { "ingredientId": 27, "amount": 1020, "category": "Mix-in" }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Lemon Sugar",
+      "displayName": "Stellar Citrus",
+      "baseYield": 44,
+      "baseCookieSize": 30,
+      "totalDough": 1320,
+      "ovenTemp": "350°F (175°C)",
+      "bakeTime": "10-12 min",
+      "instructions": "Mix dry ingredients. Cream butter & sugar 2-3 min. Add eggs, lemon juice, zest, vanilla. Combine. Roll in sugar. Bake.",
+      "ingredients": [
+        { "ingredientId": 7, "amount": 500, "category": "Dry" },
+        { "ingredientId": 12, "amount": 5, "category": "Dry" },
+        { "ingredientId": 11, "amount": 5, "category": "Dry" },
+        { "ingredientId": 25, "amount": 6, "category": "Dry" },
+        { "ingredientId": 1, "amount": 454, "category": "Wet" },
+        { "ingredientId": 3, "amount": 400, "category": "Wet" },
+        { "ingredientId": 14, "amount": 2, "category": "Wet" },
+        { "ingredientId": 19, "amount": 4, "category": "Wet" },
+        { "ingredientId": 20, "amount": 2, "category": "Wet" },
+        { "ingredientId": 18, "amount": 8, "category": "Wet" },
+        { "ingredientId": 3, "amount": 100, "category": "Rolling" }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Oatmeal Raisin",
+      "displayName": "Solar Harvest",
+      "baseYield": 24,
+      "baseCookieSize": 50,
+      "totalDough": 1200,
+      "ovenTemp": "350°F (175°C)",
+      "bakeTime": "11-13 min",
+      "instructions": "Cream butter & sugars 3-4 min. Add eggs & vanilla. Mix dry ingredients. Combine. Fold in oats, raisins, walnuts. Chill 30-60 min. Bake.",
+      "ingredients": [
+        { "ingredientId": 1, "amount": 226, "category": "Wet" },
+        { "ingredientId": 4, "amount": 200, "category": "Wet" },
+        { "ingredientId": 3, "amount": 100, "category": "Wet" },
+        { "ingredientId": 14, "amount": 2, "category": "Wet" },
+        { "ingredientId": 18, "amount": 13, "category": "Wet" },
+        { "ingredientId": 7, "amount": 190, "category": "Dry" },
+        { "ingredientId": 12, "amount": 5, "category": "Dry" },
+        { "ingredientId": 23, "amount": 4, "category": "Dry" },
+        { "ingredientId": 25, "amount": 3, "category": "Dry" },
+        { "ingredientId": 10, "amount": 240, "category": "Mix-in" },
+        { "ingredientId": 29, "amount": 190, "category": "Mix-in" },
+        { "ingredientId": 30, "amount": 60, "category": "Mix-in" }
+      ]
+    }
+  ]
+}
+

@@ -5,6 +5,7 @@ export interface Cookie {
   price: number
   imageUrl: string
   flavor: string
+  recipeId?: number  // Links to Recipe for cost calculation
   nutritionalFacts: {
     calories: number
     fat: number

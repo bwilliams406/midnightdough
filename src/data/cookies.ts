@@ -1,5 +1,22 @@
 import { Cookie } from '../types'
 
+// Product to Recipe ID mapping:
+// - Moonlight Morsels (1) → Recipe 4 (Chocolate Chip)
+// - Midnight Obsidian (2) → Recipe 3 (Dark Chocolate Chip)
+// - Solar Harvest (3) → Recipe 6 (Oatmeal Raisin)
+// - Stardust Sweetness (4) → Recipe 1 (Sugar Cookie)
+// - Cinnamon Comet (5) → Recipe 2 (Snickerdoodle)
+// - Stellar Citrus (6) → Recipe 5 (Lemon Sugar)
+
+export const PRODUCT_TO_RECIPE: Record<number, number> = {
+  1: 4, // Moonlight Morsels → Chocolate Chip
+  2: 3, // Midnight Obsidian → Dark Chocolate Chip
+  3: 6, // Solar Harvest → Oatmeal Raisin
+  4: 1, // Stardust Sweetness → Sugar Cookie
+  5: 2, // Cinnamon Comet → Snickerdoodle
+  6: 5, // Stellar Citrus → Lemon Sugar
+}
+
 export const cookies: Cookie[] = [
   {
     id: 1,
@@ -8,6 +25,7 @@ export const cookies: Cookie[] = [
     price: 3.75,
     flavor: 'Chocolate Chip',
     imageUrl: '/img/midnightmorsels.jpg',
+    recipeId: 4,
     nutritionalFacts: {
       calories: 360,
       fat: 20,
@@ -27,6 +45,7 @@ export const cookies: Cookie[] = [
     price: 5.00,
     flavor: 'Dark Chocolate Chip · Specialty',
     imageUrl: '/img/midnightobsidian.jpg',
+    recipeId: 3,
     nutritionalFacts: {
       calories: 540,
       fat: 28,
@@ -46,6 +65,7 @@ export const cookies: Cookie[] = [
     price: 3.75,
     flavor: 'Oatmeal Raisin',
     imageUrl: '/img/solarharvest.jpg',
+    recipeId: 6,
     nutritionalFacts: {
       calories: 380,
       fat: 16,
@@ -65,6 +85,7 @@ export const cookies: Cookie[] = [
     price: 3.75,
     flavor: 'Sugar Cookie',
     imageUrl: '/img/stardustsweetness.png',
+    recipeId: 1,
     nutritionalFacts: {
       calories: 315,
       fat: 15.5,
@@ -84,6 +105,7 @@ export const cookies: Cookie[] = [
     price: 3.75,
     flavor: 'Snickerdoodle',
     imageUrl: '/img/cinnamoncomet.jpg',
+    recipeId: 2,
     nutritionalFacts: {
       calories: 320,
       fat: 16.5,
@@ -103,6 +125,7 @@ export const cookies: Cookie[] = [
     price: 4.00,
     flavor: 'Lemon',
     imageUrl: '/img/stellarcitrus.jpg',
+    recipeId: 5,
     nutritionalFacts: {
       calories: 340,
       fat: 18,
